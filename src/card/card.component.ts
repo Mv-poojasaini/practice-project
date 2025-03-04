@@ -8,9 +8,11 @@ import { CardsService } from "src/service/cards.service";
   styleUrls: ['./card.component.css']
 })
 export class CardComponent implements OnInit{
-  constructor(private carsService: CardsService) { }
+  constructor(private cardsService: CardsService) { }
+  filterText = "";
   title = "Card";
-  cards = this.carsService.getCard() ;
+  cards = this.cardsService.getCard();
+  customer = this.cardsService.getCustomerDetail();
   // cards = [
   //   {
   //     title: 'Card 1',
@@ -33,6 +35,10 @@ export class CardComponent implements OnInit{
     console.log("Showing data")
   }
 
+  submitForm() {
+    console.log("Submitting form", this.customer);
+
+  }
   
   ngOnInit(): void {}
 }

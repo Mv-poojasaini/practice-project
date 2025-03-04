@@ -11,7 +11,7 @@ export class HighlightDirective{
     this.changeBackgroundColor('red');
   }
   @HostListener('click') onClick() {
-    this.toggleBackgroundColor();
+    this.changeBackgroundColor('yellow');
   }
   private toggleBackgroundColor() {
     this.isClicked = !this.isClicked;
