@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Product } from 'src/model/product.type';
 
 @Component({
   selector: 'app-root',
@@ -11,5 +12,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'hello-jetblue';
-  
+
 }

@@ -1,0 +1,11 @@
+<div>
+  <h1>Shopping Card</h1>
+
+  <h2>
+    Product List
+  </h2>
+  <app-product (addToCart) = "onAddToCart($event)"></app-product>
+
+  <h2>Your Card</h2>
+  <app-add-items [cartItems] = "cartItems" (removeFromCart) = "onRemoveFromCart($event)"></app-add-items>
+</div>
